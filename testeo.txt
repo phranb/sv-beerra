@@ -1,0 +1,155 @@
+Carga
+
+// Cervecerias
+[X] Carga de datos correctamente (Cerveceria, Direccion y  contacto)
+        [X] Salida esperada: Carga correcta de la cerveceria.
+        [X] Notificicación correcta de carga 
+[X] Carga de datos de la cerveceria sin cargar ningún contacto 
+        [X]Salida esperada: Cargue al menos un contacto.
+        [X] Notificicación correcta de falta de contacto
+[X] Carga de datos dejando en blanco Cerveceria 
+        [X]Salida esperada: Campo obligatorio
+[X] Carga de datos dejando en banco Direccion
+        [X] Salida esperada: Campo obligatorio
+
+//modificación
+
+[X] Modificación de la cerveceria sin contacto
+        [X] Salida esperada: Cargue al menos un contacto
+[X] Modificación correcta con todos los datos
+        [X] Salida esperada: Cerveceria modificada correctamente
+        [X] Notificicación correcta de modificación
+[X] Modificación con falta de datos    
+        [X]Salida esperada: Cargue  campos obligatorios
+// contacto 
+
+[X] Carga de datos correctamente (Nombre, Telefono, mail)
+        [X]Salida esperada: Carga correcta de contacto
+[X] Carga de datos dejando en blanco los respectivos campos
+        [X]Salida esperada: Campo obligatorio
+[X] Carga de telefono ingresando letras
+        [X]Salida esperada: telefono erroneo
+[X] Carga de mail sin formato de mail   
+        [X]Salida esperada: Mail erroneo
+[X] Modificacion de contacto con datos correctos
+        [X]Salida esperada: Contacto actualizado correctamente  
+        [X]Notificacion correcta de modificacion de contacto
+[X]Modificacion de contacto con falta de ingresar datos
+        [X]Salida esperada: Ingrese campos obligatorios
+[X]Eliminacion de contacto 
+        [X]Salida esperada: Contacto eliminado correctamente
+        [X]Notificacion correcta de eliminacion de contacto.
+[X] Click de contacto en cervecerias 
+        [X] Salida esperada: Muestra de todos los contactos disponibles
+[X] Click en boton whatsapp 
+        [X]Salida esperada: Se abre whatsapp web y si el telefono es correcto abre chat.
+        [X]Si es incorrect el telefono muestra eeror telefono incorrecto.
+
+[X]Eliminar contacto mientras se esta ditando
+        [X]Salida esperada no se puede eliminar contacto termine de editar.
+[X]Eliminar cerveceria mientras se esta editando
+        [X]Salida esperada no se puede eliminar mientrass se esta eliminando
+
+// Eliminacion
+Relaciones de cerveceria :
+    *[X] Barriles
+    *[X] Botellas
+
+[X] Pregunta de eliminacion y verificacion de eiminacion.
+    [X] Si la cerveceria no tiene relacion con ningun elemento se elimina
+            [X] Notificicación correcta de eliminacion
+    [X] Si la cerveceria tiene relacion con algun elemmento prohibe la eliminacion
+            [X] Notificicación correcta de prohibición de eliminacion
+
+
+            // TESTEO BOTELLAS
+
+[X] Carga de datos correctamente      
+        [X] Carga correcta de botella
+        [X] Notificacion de carga correcta
+[X] Carga de datos con campos vacios
+        [X] Campos obligatorios
+        [X] Notificacion de campos obligatorios
+[X] Carga de datos poniendo datos erroneos
+        [X] Campos erroneos
+        [X] Notificación de campos erroneos
+[X]Modificacion si no tiene stock
+        [X]No pregunta precio de venta 
+[X]Modificacion de datos correctos
+        [X]Modificacion correcta de datos
+        [X]Notificacion correcta de modificacion
+[x] Modificacion de datos vacios 
+        [x] Campos obligatorios
+        [x] Notificacion de campos obligatorios
+[X] modificacion de datos poniendo datos erroneos
+        [X] Campos erroneos
+        [X] Notificación de campos erroneos
+[X] Compra de botellas datos correctos
+        [X]Compra correcta
+        [X]Notificacion correcta
+[X] Compra de botellas mientras se esta editando
+        [X]no deja comprar botellas
+[X]Compra de botellas datos erroneos  
+        [X]notificacion de datos erroneos
+        
+// Relaciones   
+        *[X]Ventas
+        *[X]Compra de botellas
+
+[X]Eliminacion de Botellas        
+        [X]Eliminacion correcta
+        [X] pregunta de eliminacion de botellas
+        [X] notificacion de botella correcta
+[X] Eliminacion de botella si tiene ventas
+        [X]Notificacion de botella con ventas
+        [X]imposibilidad de eliminacion
+[X]Eliminacion de botella si se esta editando
+        [X]Notificacion de finalizacion de edicion
+        [X]Imposibilidad de eliminacion
+
+
+            // TESTEO BARRILES
+
+[X] Carga de datos correctamente      
+        [X] Carga correcta de barril
+        [X] Notificacion de carga correcta
+[X] Carga de datos con campos vacios
+        [X] Campos obligatorios
+        [X] Notificacion de campos obligatorios
+[X] Carga de datos poniendo datos erroneos
+        [X] Campos erroneos
+        [X] Notificación de campos erroneos
+
+[X]Modificacion de datos correctos
+        [X]Modificacion correcta de datos
+        [X]Notificacion correcta de modificacion
+[X] Modificacion de datos vacios 
+        [X] Campos obligatorios
+        [X] Notificacion de campos obligatorios
+[X] modificacion de datos poniendo datos erroneos
+        [X] Campos erroneos
+        [X] Notificación de campos erroneos
+[X] Modificacion de estado si el barril ya tiene ventas
+        [X]No muestra cambio de estado
+[X] Moficacion de barril vacio
+        [X]No muestra cambio de estado
+[X] Conexion de barril vacio    
+        [X]No deja conectar  barril
+[X] Conexion de barril mientras esta editando
+        [X]no deja conectar barril
+[X] Desconexion de barril mientras se esta editando
+        [X]no deja desconectar barril
+
+// Relaciones   
+        *[X]Ventas
+
+[X]Eliminacion de barril        
+        [X] pregunta de eliminacion de barril
+        [X] notificacion de barril correcta
+[X] Eliminacion de barril si tiene ventas
+        [X]Notificacion de barril con ventas
+        [X]imposibilidad de eliminacion
+[X]Eliminacion de barril si se esta editando
+        [X]Notificacion de finalizacion de edicion
+        [X]Imposibilidad de eliminacion
+
